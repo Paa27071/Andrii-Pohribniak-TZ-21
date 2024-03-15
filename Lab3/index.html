@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторна робота 3 ТЗ-21 Погрібняк А.А.</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th colspan="2"><b>Pizza shop 2.0</b></th>
+            </tr>
+            <tr>
+                <th style="font-weight: normal;text-align: left;"><label for="name">Name</label></th>
+                <th Style="text-align: left;"><input id="name" type="text" name="name" placeholder="Name"></th>
+            </tr>
+            <tr>
+                <th style="font-weight: normal;text-align: left;">Pizza Topping</th>
+                <th style="font-weight: normal; text-align: left;" >
+                    <input type="radio" id="Supreme" name="Topping" value="S">
+                    <label for="Supreme">Supreme</label><br>
+                    <input type="radio" id="Vegetarian" name="Topping" value="V">
+                    <label for="Vegetarian">Vegetarian</label><br>
+                    <input type="radio" id="Hawaiian" name="Topping" value="H">
+                    <label for="Hawaiian">Hawaiian</label>
+                </th>
+            </tr>
+            <tr>
+                <th style="font-weight: normal;text-align: left;"><label for="Sause">Pizza Sause</label></th>
+                <th style="font-weight: normal;text-align: left;">
+                      <select id="Sause" name="Pizza Sause">
+                        <option value="Tomato">Tomato</option>
+                        <option value="Mayonnaise">Mayonnaise</option>
+                        <option value="BBQ">BBQ</option>
+                      </select>
+                </th>
+            </tr>
+            <tr>
+                <th style="font-weight: normal;text-align: left;">Optional Extras</th>
+                <th  style="font-weight: normal;text-align: left;">
+                    <input type="checkbox" id="ExtraCheese" name="Extras" value="C">
+                    <label for="ExtraCheese">Extra Cheese</label>
+                    <input type="checkbox" id="GlutenFreeBase" name="Extras" value="G">
+                    <label for="GlutenFreeBase">Gluten Free Base</label>
+                </th>
+            </tr>
+            <tr>
+                <th style="font-weight: normal;text-align: left;" colspan="2"><label for="Delivery">Delivery Instruction</label><br>
+                <textarea id="Delivery" name="Delivery" placeholder="Delivery Instruction"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="font-weight: normal;text-align: left;" colspan="2" ><button type="submit">Send my Order</button></th>
+            </tr>
+        </table>
+    </body>
+</html>
