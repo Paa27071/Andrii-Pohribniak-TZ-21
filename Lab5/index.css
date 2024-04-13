@@ -1,0 +1,142 @@
+
+.container{
+    border-radius: 0.5em;
+    outline: 1px solid rgb(105, 105, 105);
+    background-color: rgb(105, 105, 105);
+    width: 30em;
+    height: 60em;
+    max-width: 30vw;
+    max-height: 60vh;
+    min-width: 200px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1em 4em 1fr ;
+
+    grid-template-areas: 
+    "head head head head"
+    "main main main main"
+    "buttons buttons buttons buttons";
+}
+.circle{
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    border: none;
+
+}
+.circle1 {
+  background-color: red; 
+}
+.circle2 {
+  background-color: orange; 
+}
+.circle3 {
+  background-color: green;  
+}
+
+
+.head{
+    grid-area: head;
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+}
+.main{
+    grid-area: main;
+    color: white;
+    border:0;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 6;  
+    padding-right: 0.4em; 
+}
+.buttons{
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "b1 b2 b3 b4"
+    "b5 b6 b7 b8"
+    "b9 b10 b11 b12"
+    "b13 b14 b15 b16"
+    "b17 b17 b18 b19"; 
+}
+.b{
+    color: white;
+    font-size: 25px;
+    border:1px solid #555454;
+    background: gray;
+}
+.b:hover{
+    background:rgb(165, 165, 165);
+    color: white;
+}
+.row{
+    background: linear-gradient(gray,rgb(105, 105, 105));
+}
+.orange{
+    background-color:orange;
+}
+.orange:hover{
+    background:rgb(255, 198, 92);
+    color: white;
+}
+.b1{
+    grid-area: b1;
+}
+.b2{
+    grid-area: b2;
+}
+.b3{
+    grid-area: b3;
+}
+.b4{
+    grid-area: b4;
+}
+.b5{
+    grid-area: b5;
+}
+.b6{
+    grid-area: b6;
+}
+.b7{
+    grid-area: b7;
+}
+.b8{
+    grid-area: b8;
+}
+.b9{
+    grid-area: b9;
+}
+.b10{
+    grid-area: b10;
+}
+.b11{
+    grid-area: b11;
+}
+.b12{
+    grid-area: b12;
+}
+.b13{
+    grid-area: b13;
+}
+.b14{
+    grid-area: b14;
+}
+.b15{
+    grid-area: b15;
+}
+.b16{
+    grid-area: b16;
+}
+.b17{
+    grid-area: b17;
+}
+.b18{
+    grid-area: b18;
+}
+.b19{
+    grid-area: b19;
+}
