@@ -1,0 +1,244 @@
+.main{
+    background-color: rgb(247, 245, 245);
+    box-shadow: 2px 2px 10px black;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 1500px;
+    border-radius: 4em;
+    font-family: Calibri, Bold, sans-serif;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "aboutme datails";
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: rgb(233, 233, 233);
+    border-radius: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#Photo{
+    margin-top: 5em;
+    border-radius: 4em;
+}
+
+#name{
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color:#4a5770
+}
+
+.a{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 1em;
+    background-color: #d3d3d3;
+    font-size: 1.5em;
+    line-height: 0;
+    color:#4a5770;
+}
+
+.socialmedia{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#Telegram,#Instagram,#YouTube{
+    padding-right: 10px;
+    transition: transform 0.3s;
+}
+#Telegram:hover,#Instagram:hover,#YouTube:hover{
+    opacity:0.5;
+}
+
+.shirtinfo{
+    padding-bottom: 25px;
+    font-size: 1.5em;
+    line-height: 0;
+    color:#4a5770;
+}
+
+.shirtinfoone,.shirtinfotwo, .shirtinfothree,.shirtinfofour{
+display:flex;
+flex-direction: row;
+padding-bottom: 10px;
+}
+
+#calendar1,#place1,#phone1{
+    padding-right: 15px;
+    padding-top: 7px;
+}
+#email1{
+    padding-right: 15px;
+    padding-top: 11px;
+}
+
+.pp{
+    display:flex;
+    flex-direction: row; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#rezumepos{
+    color:#d3d3d3;
+    text-decoration: none;
+}
+#download{
+    padding-right: 10px;
+    padding-top: 19px;
+} 
+.rezume{
+    font-size: 2em;
+    line-height: 0;
+    color:#d3d3d3;
+    background-color: rgb(74, 74, 218);
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+
+}
+.rezume:hover{
+    background-color: rgb(114, 114, 221);
+}
+
+
+
+#datails{
+    grid-area: datails;
+    border-radius: 4em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 23% 1fr;
+
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+    overflow: auto; 
+    margin-bottom: 0;
+}
+#about,#resume,#portfolio,#contact{
+    padding-right: 3em;
+    font-size: 1.5em;
+    color:#4a5770;
+    background-color: rgb(247, 245, 245);
+    border: none;
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 15px 32px;
+    font-size: 1.5em;
+}
+#about{
+    background-color: rgb(74, 74, 218);
+    color: white;
+}
+#about:hover,#resume:hover,#portfolio:hover,#contact:hover{
+    opacity:0.5;
+}
+.line{
+    display: flex;
+}
+#line1{
+    background-color: orange;
+    height: 0.5em;
+    width: 1em;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+#line2{
+    background-color:blue;
+    height: 0.5em;
+    width: 2.3em;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+.information {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.5em;
+    color:#4a5770;
+}
+#info1{
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+    margin-top: 0.4em;
+}
+#maininfo{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.work{
+    margin-top: 0;
+    display: grid;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.5em;
+    grid-gap: 0.5em 0.5em;
+    color:#4a5770;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5em 1fr 1fr;
+    grid-template-areas: 
+    "work work"
+    "type1 type2"
+    "type3 type4";
+}
+#work{
+    grid-area: work;
+    font-size: 1.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+#type1{
+    text-align: center;
+    grid-area: type1;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#type2{
+    text-align: center;
+    grid-area: type2;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#type3{
+    text-align: center;
+    margin-bottom: 1em;
+    grid-area: type3;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+}
+#type4{
+    text-align: center;
+    margin-bottom: 1em;
+    grid-area: type4;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+}
+#camera,#scenarii,#obrobka,#design{
+    padding-top: 1em;
+}
+#type11,#type22,#type33,#type44{
+    padding-top: 0;
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+#type111,#type222,#type333,#type444,#type3333{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
